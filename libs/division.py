@@ -27,5 +27,23 @@ class Division:
     def addteam(self, team):
         self.teams.append(team)
 
+    # Remove a team from the division
+    def removeteam(self, team):
+        self.teams.remove(team)
+
     # Rank teams in the division based on win percentage, secondarily games played, and thirdly team city name
     def rankteams(self):
+        self.teams.sort(key=lambda x: x.win_percent, reverse=True)
+
+    # Get methods to the division attributes
+    def getleague(self):
+        return self.league
+
+    def getname(self):
+        return self.name
+
+    def getabrv(self):
+        return self.abrv
+
+    def getteams(self):
+        return self.teams
