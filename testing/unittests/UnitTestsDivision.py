@@ -6,9 +6,10 @@ Description: unit tests of the Division class
 """
 
 import unittest
-import random
+from testing.unittests.UnitTestsPrint import TestPrint
 from libs.team import Team
 from libs.division import Division
+
 
 class TestDivisionMethods(unittest.TestCase):
     # Setup for the Unittest class
@@ -67,6 +68,9 @@ class TestDivisionMethods(unittest.TestCase):
         self.assertTrue(mod_abrv == self.division.getabrv(), 'Fail: Incorrect abrv')
 
     # Test adding a team to the division
+    def test_add_team_to_division(self):
+        # Create a team
+        team = Team(city='Portland', name='Roxes', abv='PDR')
 
 
     # Test adding a team and then removing the team.
@@ -79,4 +83,3 @@ class TestDivisionMethods(unittest.TestCase):
 
 
     # Test to add multiple teams to the division, give each win percentages(need wins & losses), and rank them
-    

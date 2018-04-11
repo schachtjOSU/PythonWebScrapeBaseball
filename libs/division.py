@@ -10,10 +10,10 @@ from libs.team import Team
 
 class Division:
     # Division class initialization
-    def __init__(self):
-        self.league = None
-        self.name = None
-        self.abrv = None
+    def __init__(self, league=None, name=None, abv=None):
+        self.league = league
+        self.name = name
+        self.abrv = abv
         self.teams = []
 
     # Methods for the class

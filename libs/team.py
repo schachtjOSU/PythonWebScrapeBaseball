@@ -8,10 +8,10 @@
 
 class Team:
     # Team class initializer
-    def __init__(self):
-        self.city = None
-        self.team_name = None
-        self.abrev = None
+    def __init__(self, city=None, name=None, abv=None):
+        self.city = city
+        self.team_name = name
+        self.abrev = abv
         self.wins = 0
         self.loss = 0
         self.games_played = 0
