@@ -69,8 +69,11 @@ class TestDivisionMethods(unittest.TestCase):
 
     # Test adding a team to the division
     def test_add_team_to_division(self):
+        # Create a division
+        div = Division('Oregon', 'Cascade', 'OC')
         # Create a team
         team = Team(city='Portland', name='Roxes', abv='PDR')
+        div.addteam(team)
 
 
     # Test adding a team and then removing the team.

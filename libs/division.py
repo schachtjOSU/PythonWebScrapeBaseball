@@ -18,7 +18,7 @@ class Division:
 
     # Methods for the class
     # modify basic attributes of the division
-    def modifydivision(self, league, name, abrv):
+    def modifydivision(self, league=None, name=None, abrv=None):
         self.league = league
         self.name = name
         self.abrv = abrv
